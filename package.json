@@ -1,0 +1,16 @@
+{
+    "name":"bolet-api-gateway",
+    "version": "1.0.0",
+    "descrition":"This is a API Gateway for the project bolet",
+    "main":"src/index",
+    "scripts":{},
+    "author":"JdrawProductions",
+    "license":"ICS",
+    "dependencies": {
+        "apollo-server":"^3.1.2",
+        "apollo-datasource-rest" :"^3.1.1",
+        "graphql":"^15.5.1",
+        "lodash":"^4.17.21",
+        "node-fetch":"^2.6.0"
+    }
+}
