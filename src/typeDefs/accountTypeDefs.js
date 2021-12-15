@@ -5,7 +5,7 @@ const accountTypes = gql `
         username:String!
         cedula:String!
         email:String!
-        telefono:String!
+        phone:String!
     }
 
     extend type Query {

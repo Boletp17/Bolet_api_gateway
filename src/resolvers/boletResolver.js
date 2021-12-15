@@ -35,9 +35,9 @@ const userResolver = {
         refreshToken: async(_, { token }, { dataSources }) => {
             return await dataSources.boletAPI.refreshToken(token);
         },
-        updateUser: async(_, { user }, { dataSources, userIdToken }) => {
-            if(user.id == userIdToken)
-                return await dataSources.boletAPI.updateUser(user);
+        updateUser: async(_, { userInput }, { dataSources, userIdToken }) => {
+            if(userInput.id == userIdToken)
+                return await dataSources.boletAPI.updateUser(userInput);
             else
                 return null;
         },
