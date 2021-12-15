@@ -33,7 +33,7 @@ const boletTypes = gql `
         username:String!
         cedula:String!
         email:String!
-        telefono:String!
+        phone:String!
     }
 
     input UserUpdate {

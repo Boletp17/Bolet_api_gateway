@@ -1,4 +1,4 @@
-const accouontResolver = {
+const accountResolver = {
     Query: {
         accountByUsername: async(_, {username}, { dataSources, userIdToken }) => {
             usernameToken = (await dataSources.boletAPI.getUser(userIdToken)).username
@@ -19,4 +19,4 @@ const accouontResolver = {
     }
 };
 
-module.exports = accouontResolver
+module.exports = accountResolver

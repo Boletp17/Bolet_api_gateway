@@ -5,14 +5,16 @@ const resolvers       = require('./resolvers');
 const authentication  = require('./utils/authentication');
 const boletAPI        = require('./dataSources/boletAPI');
 const accountAPI      = require('./dataSources/accountAPI');
+const categoriesAPI   = require('./dataSources/categoriesAPI');
 
 const server = new ApolloServer({
     context: authentication,
     typeDefs,
     resolvers,
     dataSources:() => ({
-        boletAPI    : new boletAPI(),
-        accountAPI  : new accountAPI(),
+        boletAPI      : new boletAPI(),
+        accountAPI    : new accountAPI(),
+        categoriesAPI : new categoriesAPI
     }),
     introspection: true,
     playground   : true

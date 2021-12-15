@@ -26,7 +26,7 @@ class boletAPI extends RESTDataSource {
         return await this.delete(`/user/delete/${userId}`, user);
     }
 
-    async authRequest(credentials){ //Poner atención en esta parte
+    async boletRequest(credentials){ //Poner atención en esta parte
         credentials = new Object(credentials);
         return await this.post('/login/', credentials);
     }
